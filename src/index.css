@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* -----------------------------------------------------------
+   GLOBAL RESET + TYPOGRAPHY
+----------------------------------------------------------- */
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #FFFBF3;
+  color: #1f2433;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Fredoka', 'Baloo 2', system-ui, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+/* Subtle background blobs decoration helpers */
+.blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(60px);
+  opacity: 0.45;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Pretty focus ring (accessibility) */
+:focus-visible {
+  outline: 3px solid #9D4EDD;
+  outline-offset: 3px;
+  border-radius: 12px;
+}
+
+/* CTA gradient text utility */
+.text-gradient-emotions {
+  background: linear-gradient(90deg, #FF6B6B, #FFD93D, #6BCB77, #4D96FF, #9D4EDD);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
