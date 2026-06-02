@@ -8,7 +8,7 @@ const ITEMS = [
     color: '#9D4EDD',
   },
   {
-    text: 'É mãe ou pai e quer um jeito leve de conversar com seu filho — principalmente depois das crises.',
+    text: 'É mãe ou pai e quer um jeito leve de conversar com seu filho, principalmente depois das crises.',
     color: '#FF6B6B',
   },
   {
@@ -22,7 +22,7 @@ export default function ForWho() {
     <Section className="bg-cream">
       <div className="max-w-3xl mx-auto">
         <Reveal>
-          <h2 className="text-3xl md:text-5xl font-bold text-slate-900 text-center mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-slate-900 text-center mb-10 sm:mb-12">
             Feito para você que:
           </h2>
         </Reveal>

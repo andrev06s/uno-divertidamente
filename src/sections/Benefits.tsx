@@ -30,7 +30,7 @@ const BENEFITS = [
     icon: Target,
     emoji: '🎯',
     title: 'Engajamento natural',
-    text: 'A criança não resiste a um jogo de cartas. O envolvimento é espontâneo — e o desenvolvimento acontece sem ela perceber.',
+    text: 'A criança não resiste a um jogo de cartas. O envolvimento é espontâneo, e o desenvolvimento acontece sem ela perceber.',
     color: '#FF6B6B',
   },
 ];
@@ -38,15 +38,15 @@ const BENEFITS = [
 export default function Benefits() {
   return (
     <Section id="beneficios" className="bg-cream">
-      <div className="text-center mb-14">
+      <div className="text-center mb-10 sm:mb-14">
         <Reveal>
-          <h2 className="text-3xl md:text-5xl font-bold text-slate-900">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-slate-900">
             🧰 A ferramenta que faltava no seu kit
           </h2>
         </Reveal>
         <Reveal delay={0.15}>
-          <p className="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">
-            Por que toda criança adora jogar — e por que isso muda tudo:
+          <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto">
+            Por que toda criança adora jogar, e por que isso muda tudo:
           </p>
         </Reveal>
       </div>
@@ -84,7 +84,7 @@ export default function Benefits() {
       </div>
 
       <Reveal delay={0.3}>
-        <div className="mt-14 text-center">
+        <div className="mt-10 sm:mt-14 text-center">
           <CtaButton>🎴 QUERO GARANTIR O MEU UNO</CtaButton>
         </div>
       </Reveal>

@@ -11,8 +11,13 @@ interface CtaButtonProps {
 }
 
 /**
- * Main call-to-action button. Animated emotion-gradient pill with hover scale + glow.
- * Defaults to anchoring to #oferta (the Pricing section) when no href is provided.
+ * Main call-to-action button. Animated emotion-gradient pill with hover
+ * scale + glow. Defaults to anchoring to #oferta (the Pricing section)
+ * when no href or onClick is provided.
+ *
+ * Mobile-friendly: tighter paddings on small screens, text can wrap so a
+ * long label like "QUERO O MEU UNO DAS EMOÇÕES" never overflows a 360px
+ * viewport.
  */
 export default function CtaButton({
   children,
@@ -22,11 +27,14 @@ export default function CtaButton({
   size = 'lg',
   ariaLabel,
 }: CtaButtonProps) {
-  const sizeClasses = size === 'lg' ? 'px-8 py-5 text-lg' : 'px-6 py-3.5 text-base';
+  const sizeClasses =
+    size === 'lg'
+      ? 'px-5 py-3.5 text-sm sm:px-7 sm:py-4 sm:text-base md:px-8 md:py-5 md:text-lg'
+      : 'px-5 py-3 text-sm sm:px-6 sm:py-3.5 sm:text-base';
 
   const base =
     'relative inline-flex items-center justify-center gap-2 font-semibold rounded-full ' +
-    'transition-shadow duration-300 select-none whitespace-nowrap';
+    'transition-shadow duration-300 select-none text-center leading-tight max-w-full';
 
   const variants = {
     primary:
@@ -59,14 +67,19 @@ export default function CtaButton({
 
   if (onClick) {
     return (
-      <button type="button" onClick={onClick} aria-label={ariaLabel} className="inline-block">
+      <button
+        type="button"
+        onClick={onClick}
+        aria-label={ariaLabel}
+        className="inline-block max-w-full"
+      >
         {content}
       </button>
     );
   }
 
   return (
-    <a href={href} aria-label={ariaLabel} className="inline-block">
+    <a href={href} aria-label={ariaLabel} className="inline-block max-w-full">
       {content}
     </a>
   );

@@ -28,9 +28,14 @@ export default {
           '0%, 100%': { transform: 'translateY(0) rotate(0deg)' },
           '50%': { transform: 'translateY(-12px) rotate(2deg)' },
         },
+        'gradient-shift': {
+          '0%, 100%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+        },
       },
       animation: {
         floaty: 'floaty 6s ease-in-out infinite',
+        'gradient-shift': 'gradient-shift 8s ease-in-out infinite',
       },
     },
   },

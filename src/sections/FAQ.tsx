@@ -43,9 +43,9 @@ function FAQItem({ q, a, isOpen, onToggle, index }: ItemProps) {
           aria-expanded={isOpen}
           aria-controls={panelId}
           onClick={onToggle}
-          className="w-full flex items-center justify-between gap-4 text-left px-6 py-5 md:px-7 md:py-6 font-semibold text-slate-900 hover:bg-cream/40 transition-colors"
+          className="w-full flex items-center justify-between gap-3 sm:gap-4 text-left px-5 py-4 sm:px-6 sm:py-5 md:px-7 md:py-6 font-semibold text-slate-900 hover:bg-cream/40 transition-colors"
         >
-          <span className="text-base md:text-lg">{q}</span>
+          <span className="text-sm sm:text-base md:text-lg">{q}</span>
           <motion.span
             animate={{ rotate: isOpen ? 180 : 0 }}
             transition={{ duration: 0.3 }}
@@ -68,7 +68,7 @@ function FAQItem({ q, a, isOpen, onToggle, index }: ItemProps) {
             transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
             className="overflow-hidden"
           >
-            <p className="px-6 pb-6 md:px-7 md:pb-7 text-slate-600 leading-relaxed">
+            <p className="px-5 pb-5 sm:px-6 sm:pb-6 md:px-7 md:pb-7 text-sm sm:text-base text-slate-600 leading-relaxed">
               {a}
             </p>
           </motion.div>
@@ -84,7 +84,7 @@ export default function FAQ() {
   return (
     <Section id="faq" className="bg-cream">
       <Reveal>
-        <h2 className="text-3xl md:text-5xl font-bold text-slate-900 text-center mb-12">
+        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-slate-900 text-center mb-10 sm:mb-12">
           ❓ Perguntas Frequentes
         </h2>
       </Reveal>

@@ -8,6 +8,10 @@ interface SectionProps {
   contained?: boolean;
 }
 
+/**
+ * Standard section wrapper. Mobile-first paddings — tighter on small
+ * screens, generous on desktop.
+ */
 export default function Section({
   id,
   children,
@@ -15,7 +19,10 @@ export default function Section({
   contained = true,
 }: SectionProps) {
   return (
-    <section id={id} className={`relative py-20 md:py-28 px-6 md:px-10 ${className}`}>
+    <section
+      id={id}
+      className={`relative py-14 px-5 sm:py-20 sm:px-6 md:py-24 md:px-10 lg:py-28 ${className}`}
+    >
       {contained ? (
         <div className="relative max-w-6xl mx-auto">{children}</div>
       ) : (
