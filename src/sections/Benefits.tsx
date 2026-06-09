@@ -8,29 +8,29 @@ const BENEFITS = [
   {
     icon: Snowflake,
     emoji: '🧊',
-    title: 'Quebra-gelo imediato',
-    text: 'Crie conexão com a criança já no primeiro minuto da sessão.',
+    title: 'Rompehielos inmediato',
+    text: 'Crea conexión con el niño desde el primer minuto de la sesión.',
     color: '#4D96FF',
   },
   {
     icon: Brain,
     emoji: '🧠',
-    title: 'Regulação emocional na prática',
-    text: 'As cartas guiam a criança a identificar e expressar o que sente, de forma lúdica.',
+    title: 'Regulación emocional en la práctica',
+    text: 'Las cartas guían al niño a identificar y expresar lo que siente, de forma lúdica.',
     color: '#9D4EDD',
   },
   {
     icon: Zap,
     emoji: '⚡',
-    title: 'Aplicação rápida',
-    text: 'Sem preparo complexo. Imprima, recorte e comece a usar em minutos.',
+    title: 'Aplicación rápida',
+    text: 'Sin preparación compleja. Imprime, recorta y empieza a usarlo en minutos.',
     color: '#FFD93D',
   },
   {
     icon: Target,
     emoji: '🎯',
-    title: 'Engajamento natural',
-    text: 'A criança não resiste a um jogo de cartas. O envolvimento é espontâneo, e o desenvolvimento acontece sem ela perceber.',
+    title: 'Participación natural',
+    text: 'El niño no se resiste a un juego de cartas. La participación es espontánea, y el desarrollo sucede sin que se dé cuenta.',
     color: '#FF6B6B',
   },
 ];
@@ -41,12 +41,12 @@ export default function Benefits() {
       <div className="text-center mb-10 sm:mb-14">
         <Reveal>
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-slate-900">
-            🧰 A ferramenta que faltava no seu kit
+            🧰 La herramienta que faltaba en tu kit
           </h2>
         </Reveal>
         <Reveal delay={0.15}>
           <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto">
-            Por que toda criança adora jogar, e por que isso muda tudo:
+            Por qué todo niño adora jugar, y por qué eso lo cambia todo:
           </p>
         </Reveal>
       </div>
@@ -85,7 +85,7 @@ export default function Benefits() {
 
       <Reveal delay={0.3}>
         <div className="mt-10 sm:mt-14 text-center">
-          <CtaButton>🎴 QUERO GARANTIR O MEU UNO</CtaButton>
+          <CtaButton>🎴 QUIERO ASEGURAR MI UNO</CtaButton>
         </div>
       </Reveal>
     </Section>

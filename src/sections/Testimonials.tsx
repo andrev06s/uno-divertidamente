@@ -3,15 +3,15 @@ import Section from '../components/Section';
 import Reveal from '../components/Reveal';
 
 /**
- * Social proof. The full body is a single image grid of real testimonials
- * (provided externally), so we just frame it nicely and keep it responsive.
+ * Social proof. Single image collage of real testimonials, framed and
+ * lazy-loaded.
  */
 export default function Testimonials() {
   return (
     <Section className="bg-white">
       <Reveal>
         <h2 className="text-3xl md:text-5xl font-bold text-slate-900 text-center mb-10 md:mb-14">
-          💬 Quem usou, não larga mais
+          💬 Quien lo usó, ya no lo suelta
         </h2>
       </Reveal>
 
@@ -23,8 +23,8 @@ export default function Testimonials() {
         >
           <div className="rounded-3xl overflow-hidden shadow-2xl bg-white ring-1 ring-slate-100">
             <img
-              src="https://i.postimg.cc/vZDp0zFD/image.png"
-              alt="Depoimentos reais de psicólogas, educadoras e mães que usaram o UNO das Emoções"
+              src="https://i.postimg.cc/k4ypnryy/instagram-comments-(2).png"
+              alt="Comentarios reales de psicólogas, educadoras y mamás que usaron el UNO de las Emociones"
               loading="lazy"
               decoding="async"
               className="block w-full h-auto"

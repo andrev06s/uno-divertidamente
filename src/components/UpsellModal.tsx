@@ -5,28 +5,28 @@ import { X, Zap, Check } from 'lucide-react';
 interface UpsellModalProps {
   open: boolean;
   onClose: () => void;
-  /** Where to send the user if they accept the R$ 10 upgrade. */
+  /** Where to send the user if they accept the $9,90 upgrade. */
   upgradeHref: string;
-  /** Where to send the user if they decline and want only the basic UNO (R$ 5). */
+  /** Where to send the user if they decline and want only the basic UNO ($4,90). */
   declineHref: string;
 }
 
 /**
- * Items included in the R$ 10 upsell tier.
+ * Items included in the $9,90 upsell tier.
  *
- * NOTE: This tier sits BETWEEN the R$ 5 basic plan and the R$ 19,90 full Kit
+ * NOTE: This tier sits BETWEEN the $4,90 basic plan and the $17,90 full Kit
  * Completo. The exact contents of this intermediate offer were not specified,
  * so the entries below are PLACEHOLDERS — replace them with the actual bonus
- * delivered at the R$ 10 price point before publishing.
+ * delivered at the $9,90 price point before publishing.
  */
 const UPGRADE_PERKS = [
-  '[PLACEHOLDER — INSERIR NOME DO BÔNUS 1 INCLUÍDO NO R$ 10]',
-  '[PLACEHOLDER — INSERIR NOME DO BÔNUS 2 (se houver)]',
+  '[PLACEHOLDER — INSERTAR NOMBRE DEL BONO 1 INCLUIDO EN EL $9,90]',
+  '[PLACEHOLDER — INSERTAR NOMBRE DEL BONO 2 (si lo hay)]',
 ];
 
 /**
- * Order-bump modal. Shown when the user clicks the R$ 5 basic-plan CTA.
- * Offers an intermediate R$ 10 upgrade before letting them proceed to the
+ * Order-bump modal. Shown when the user clicks the $4,90 basic-plan CTA.
+ * Offers an intermediate $9,90 upgrade before letting them proceed to the
  * basic checkout.
  */
 export default function UpsellModal({
@@ -74,7 +74,7 @@ export default function UpsellModal({
           {/* Backdrop */}
           <button
             type="button"
-            aria-label="Fechar"
+            aria-label="Cerrar"
             onClick={onClose}
             className="absolute inset-0 bg-slate-900/70 backdrop-blur-sm cursor-default"
           />
@@ -98,7 +98,7 @@ export default function UpsellModal({
               ref={closeButtonRef}
               type="button"
               onClick={onClose}
-              aria-label="Fechar oferta"
+              aria-label="Cerrar oferta"
               className="absolute top-3 right-3 sm:top-4 sm:right-4 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-600 transition-colors z-10"
             >
               <X className="w-5 h-5" />
@@ -108,22 +108,22 @@ export default function UpsellModal({
               {/* Badge */}
               <span className="inline-flex items-center gap-1.5 bg-emotion-gradient text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">
                 <Zap className="w-3 h-3 fill-white" />
-                Oferta especial só agora
+                Oferta especial solo ahora
               </span>
 
               <h3
                 id="upsell-title"
                 className="mt-4 text-2xl sm:text-3xl font-bold text-slate-900 leading-tight pr-8"
               >
-                Espera! Por apenas{' '}
-                <span className="text-gradient-emotions">R$ 5 a mais</span>,
-                você leva um bônus exclusivo.
+                ¡Espera! Por solo{' '}
+                <span className="text-gradient-emotions">$5 más</span>,
+                te llevas un bono exclusivo.
               </h3>
 
               <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
-                Aproveite essa oportunidade única e turbine seu UNO das Emoções
-                com um material extra de educação emocional. Você só vai ver
-                essa oferta uma vez.
+                Aprovecha esta oportunidad única y potencia tu UNO de las
+                Emociones con un material extra de educación emocional. Solo
+                verás esta oferta una vez.
               </p>
 
               {/* Perks */}
@@ -147,17 +147,17 @@ export default function UpsellModal({
               {/* Price comparison */}
               <div className="mt-6 rounded-2xl bg-cream p-4 border border-slate-100">
                 <div className="flex items-baseline justify-between gap-3 flex-wrap">
-                  <span className="text-sm text-slate-500">UNO sozinho</span>
+                  <span className="text-sm text-slate-500">UNO solo</span>
                   <span className="text-base font-semibold text-slate-400 line-through">
-                    R$ 5
+                    $4,90
                   </span>
                 </div>
                 <div className="flex items-baseline justify-between gap-3 mt-2 flex-wrap">
                   <span className="text-sm font-semibold text-anxiety">
-                    UNO + Bônus (recomendado)
+                    UNO + Bono (recomendado)
                   </span>
                   <span className="text-2xl font-bold text-gradient-emotions">
-                    R$ 10
+                    $9,90
                   </span>
                 </div>
               </div>
@@ -168,18 +168,18 @@ export default function UpsellModal({
                   href={upgradeHref}
                   className="relative block w-full text-center bg-emotion-gradient text-white font-bold text-sm sm:text-base px-5 py-3.5 sm:px-6 sm:py-4 rounded-full shadow-[0_10px_30px_-8px_rgba(157,78,221,0.55)] hover:shadow-[0_18px_40px_-8px_rgba(255,107,107,0.55)] transition-shadow leading-tight"
                 >
-                  🎯 SIM, QUERO ADICIONAR O BÔNUS POR R$ 10
+                  🎯 SÍ, QUIERO AGREGAR EL BONO POR $9,90
                 </a>
                 <a
                   href={declineHref}
                   className="block w-full text-center text-xs sm:text-sm text-slate-500 hover:text-slate-800 underline underline-offset-4 transition-colors py-2"
                 >
-                  Não, prefiro continuar apenas com o UNO por R$ 5
+                  No, prefiero continuar solo con el UNO por $4,90
                 </a>
               </div>
 
               <p className="mt-4 text-center text-xs text-slate-400">
-                🔒 Pagamento seguro · Entrega instantânea
+                🔒 Pago seguro · Entrega instantánea
               </p>
             </div>
           </motion.div>

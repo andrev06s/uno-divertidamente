@@ -21,14 +21,14 @@ export default function Guarantee() {
           </motion.div>
 
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-slate-900 mb-4 sm:mb-5">
-            Garantia incondicional de{' '}
-            <span className="text-disgust">7 dias</span>
+            Garantía incondicional de{' '}
+            <span className="text-disgust">7 días</span>
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-slate-600 leading-relaxed">
-            Se por qualquer motivo você não ficar satisfeito(a), basta nos enviar
-            uma mensagem em até 7 dias e devolvemos{' '}
-            <span className="font-semibold text-slate-900">100% do valor</span>.{' '}
-            Sem perguntas, sem burocracia.
+            Si por cualquier motivo no quedas satisfecho(a), solo envíanos un
+            mensaje en hasta 7 días y te devolvemos{' '}
+            <span className="font-semibold text-slate-900">100% del valor</span>.{' '}
+            Sin preguntas, sin burocracia.
           </p>
         </div>
       </Reveal>

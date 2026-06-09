@@ -12,10 +12,10 @@ export default function Footer() {
             />
           ))}
         </div>
-        <p>© 2026 UNO das Emoções · Todos os direitos reservados</p>
+        <p>© 2026 UNO de las Emociones · Todos los derechos reservados</p>
         <p className="text-slate-400">
-          Feito com <span className="text-anger">❤</span> para psicólogas,
-          psicopedagogas, educadoras e famílias.
+          Hecho con <span className="text-anger">❤</span> para psicólogas,
+          psicopedagogas, educadoras y familias.
         </p>
       </div>
     </footer>

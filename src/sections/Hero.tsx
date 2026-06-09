@@ -35,7 +35,7 @@ export default function Hero() {
         <motion.div variants={item}>
           <span className="inline-flex items-center gap-2 rounded-full bg-white/80 backdrop-blur px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium text-slate-700 shadow-soft border border-slate-100">
             <Sparkles className="w-4 h-4 text-anxiety flex-shrink-0" />
-            <span>Novidade para Psicólogas, Educadoras e Famílias</span>
+            <span>Novedad para Psicólogas, Educadoras y Familias</span>
           </span>
         </motion.div>
 
@@ -45,8 +45,8 @@ export default function Hero() {
           className="mt-5 sm:mt-6 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05]"
         >
           <span className="text-gradient-emotions">UNO</span>{' '}
-          <span className="text-slate-900">das</span>{' '}
-          <span className="text-gradient-emotions">Emoções</span>
+          <span className="text-slate-900">de las</span>{' '}
+          <span className="text-gradient-emotions">Emociones</span>
         </motion.h1>
 
         {/* VSL — portrait 9:16, capped at a reasonable width on desktop */}
@@ -58,14 +58,13 @@ export default function Hero() {
             {/* aspect-ratio 9:16 wrapper — keeps the embed responsive */}
             <div className="relative w-full" style={{ aspectRatio: '9 / 16' }}>
               <lt-v2
-                v="c8421c53-5df0-4163-858a-c83098ff6e28"
+                v="37ace59a-9749-49b1-a3bc-ee9ed1487369"
                 ar="9:16"
                 sc="0"
                 st="0"
                 ap="1"
                 lp="0"
-                ps="large"
-                ph="8"
+                ph="7"
                 style={{
                   position: 'absolute',
                   inset: 0,
@@ -83,8 +82,8 @@ export default function Hero() {
           variants={item}
           className="mt-8 sm:mt-10 text-lg sm:text-xl md:text-2xl text-slate-700 font-medium leading-snug max-w-xl mx-auto"
         >
-          O jogo de cartas que faz qualquer criança falar o que sente.{' '}
-          <span className="text-anger font-semibold">Brincando.</span>
+          El juego de cartas que hace que cualquier niño hable de lo que siente.{' '}
+          <span className="text-anger font-semibold">Jugando.</span>
         </motion.p>
 
         {/* Paragraph */}
@@ -92,10 +91,10 @@ export default function Hero() {
           variants={item}
           className="mt-4 sm:mt-5 text-base sm:text-lg text-slate-600 leading-relaxed max-w-xl mx-auto"
         >
-          Transforme a avaliação psicológica, a intervenção escolar e a rotina em
-          casa em um momento real de conexão. Usando uma dinâmica de cartas que as
-          crianças já amam, você acessa o mundo emocional delas sem o clima de
-          interrogatório.
+          Transforma la evaluación psicológica, la intervención escolar y la
+          rutina en casa en un momento real de conexión. Usando una dinámica de
+          cartas que los niños ya aman, accedes a su mundo emocional sin el
+          clima de interrogatorio.
         </motion.p>
 
         {/* Emotion dots */}
@@ -105,11 +104,11 @@ export default function Hero() {
 
         {/* CTA */}
         <motion.div variants={item} className="mt-8 sm:mt-10">
-          <CtaButton ariaLabel="Ir para a seção de oferta">
-            🎴 QUERO O MEU UNO DAS EMOÇÕES
+          <CtaButton ariaLabel="Ir a la sección de oferta">
+            🎴 QUIERO MI UNO DE LAS EMOCIONES
           </CtaButton>
           <p className="mt-3 text-xs sm:text-sm text-slate-500">
-            Acesso imediato · Pagamento seguro · Garantia de 7 dias
+            Acceso inmediato · Pago seguro · Garantía de 7 días
           </p>
         </motion.div>
       </motion.div>

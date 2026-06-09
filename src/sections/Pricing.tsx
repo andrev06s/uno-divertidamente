@@ -8,29 +8,30 @@ import UpsellModal from '../components/UpsellModal';
 import { withQuery } from '../utils/url';
 
 const PLAN_BASIC_FEATURES = [
-  'UNO das Emoções',
-  'Acesso vitalício',
-  'Impressões ilimitadas',
-  'Acesso imediato',
+  'UNO de las Emociones',
+  'Acceso vitalicio',
+  'Impresiones ilimitadas',
+  'Acceso inmediato',
 ];
 
 const PLAN_KIT_EXTRAS = [
-  'Caderno de Educação Emocional',
-  'Contos para Melhorar o Comportamento',
-  'Contrato Comportamental',
-  'Registro de Comportamento',
-  'Técnicas de Comportamento',
+  'Cuaderno de Educación Emocional',
+  'Cuentos para Mejorar el Comportamiento',
+  'Contrato Conductual',
+  'Registro de Comportamiento',
+  'Técnicas de Comportamiento',
 ];
 
 // Checkout links. URL params from the landing page (utm_*, fbclid, etc.)
 // are forwarded automatically via withQuery() at click time.
-const CHECKOUT_UNO_BASICO = 'https://pay.lowify.com.br/checkout?product_id=43z4B2';     // R$ 5
-const CHECKOUT_UPSELL_R10 = 'https://pay.lowify.com.br/go.php?offer=udbg35z';           // R$ 10 (popup)
-const CHECKOUT_KIT_COMPLETO = 'https://pay.lowify.com.br/checkout.php?product_id=GKei3I'; // R$ 19,90
+// TODO: replace with the LATAM gateway URLs once provided.
+const CHECKOUT_UNO_BASICO = 'https://pay.lowify.com.br/checkout?product_id=43z4B2';     // $4,90
+const CHECKOUT_UPSELL_R10 = 'https://pay.lowify.com.br/go.php?offer=udbg35z';           // $9,90 (popup)
+const CHECKOUT_KIT_COMPLETO = 'https://pay.lowify.com.br/checkout.php?product_id=GKei3I'; // $17,90
 
 function Stars() {
   return (
-    <div className="flex gap-0.5 mb-4" aria-label="5 estrelas">
+    <div className="flex gap-0.5 mb-4" aria-label="5 estrellas">
       {Array.from({ length: 5 }).map((_, i) => (
         <Star key={i} className="w-5 h-5 fill-joy text-joy" />
       ))}
@@ -49,12 +50,12 @@ export default function Pricing() {
 
       <Reveal>
         <h2 className="relative text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 text-center mb-4">
-          🎉 Leve o Jogo das Emoções agora mesmo
+          🎉 Lleva el Juego de las Emociones ahora mismo
         </h2>
       </Reveal>
       <Reveal delay={0.1}>
         <p className="relative text-center text-slate-600 mb-12 sm:mb-14 max-w-2xl mx-auto px-2">
-          Escolha o plano ideal para você. Acesso imediato, pagamento único.
+          Elige el plan ideal para ti. Acceso inmediato, pago único.
         </p>
       </Reveal>
 
@@ -67,19 +68,19 @@ export default function Pricing() {
             className="h-full bg-white rounded-3xl p-6 sm:p-8 md:p-10 shadow-soft border border-slate-200 flex flex-col"
           >
             <p className="text-xs sm:text-sm font-semibold text-slate-500 uppercase tracking-wider mb-2">
-              Ideal para começar
+              Ideal para empezar
             </p>
             <Stars />
             <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-2">
-              UNO das Emoções
+              UNO de las Emociones
             </h3>
-            <p className="text-slate-500 mb-6">O jogo principal, completo.</p>
+            <p className="text-slate-500 mb-6">El juego principal, completo.</p>
 
             <div className="mb-6">
               <p className="text-4xl md:text-5xl font-bold text-slate-900">
-                R$ 5
+                $4,90
               </p>
-              <p className="text-sm text-slate-500 mt-1">pagamento único</p>
+              <p className="text-sm text-slate-500 mt-1">pago único</p>
             </div>
 
             <ul className="space-y-3 mb-8 flex-grow">
@@ -99,13 +100,13 @@ export default function Pricing() {
                 variant="outline"
                 size="md"
                 onClick={() => setUpsellOpen(true)}
-                ariaLabel="Quero o UNO básico por R$ 5"
+                ariaLabel="Quiero el UNO básico por $4,90"
               >
-                🎴 QUERO O UNO
+                🎴 QUIERO EL UNO
               </CtaButton>
               <p className="mt-4 flex items-center gap-2 text-xs text-slate-500">
                 <Lock className="w-3.5 h-3.5" />
-                Pagamento seguro
+                Pago seguro
               </p>
             </div>
           </motion.article>
@@ -121,7 +122,7 @@ export default function Pricing() {
             transition={{ type: 'spring', stiffness: 260, damping: 22 }}
             className="relative h-full rounded-3xl p-[3px] bg-emotion-gradient shadow-2xl lg:scale-[1.04] lg:-translate-y-2"
           >
-            {/* "Mais vendido" badge */}
+            {/* "Más vendido" badge */}
             <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
               <motion.span
                 animate={{ scale: [1, 1.05, 1] }}
@@ -129,7 +130,7 @@ export default function Pricing() {
                 className="inline-flex items-center gap-1.5 bg-emotion-gradient text-white text-xs md:text-sm font-bold px-4 py-1.5 rounded-full shadow-lg uppercase tracking-wider ring-4 ring-cream"
               >
                 <Zap className="w-3.5 h-3.5 fill-white" />
-                Mais vendido
+                Más vendido
               </motion.span>
             </div>
 
@@ -139,21 +140,21 @@ export default function Pricing() {
               </p>
               <Stars />
               <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-2">
-                UNO + Kit Educação Emocional
+                UNO + Kit Educación Emocional
               </h3>
               <p className="text-slate-500 mb-6">
-                Tudo que você precisa, num único pacote.
+                Todo lo que necesitas, en un solo paquete.
               </p>
 
               <div className="mb-6">
                 <p className="text-4xl md:text-5xl font-bold text-gradient-emotions inline-block">
-                  R$ 19,90
+                  $17,90
                 </p>
-                <p className="text-sm text-slate-500 mt-1">pagamento único</p>
+                <p className="text-sm text-slate-500 mt-1">pago único</p>
               </div>
 
               <p className="text-sm font-semibold text-slate-700 mb-3">
-                Tudo do plano anterior, mais:
+                Todo del plan anterior, más:
               </p>
               <ul className="space-y-3 mb-8 flex-grow">
                 {PLAN_KIT_EXTRAS.map((f) => (
@@ -171,11 +172,11 @@ export default function Pricing() {
 
               <div className="mt-auto">
                 <CtaButton href={withQuery(CHECKOUT_KIT_COMPLETO)} size="lg">
-                  🎯 QUERO O KIT COMPLETO
+                  🎯 QUIERO EL KIT COMPLETO
                 </CtaButton>
                 <p className="mt-4 flex items-center gap-2 text-xs text-slate-500">
                   <Lock className="w-3.5 h-3.5" />
-                  Pagamento seguro · Entrega instantânea
+                  Pago seguro · Entrega instantánea
                 </p>
               </div>
             </div>
@@ -183,8 +184,8 @@ export default function Pricing() {
         </Reveal>
       </div>
 
-      {/* Upsell popup. Fires from the R$ 5 button and offers the R$ 10
-          intermediate tier (declining proceeds to the R$ 5 checkout). */}
+      {/* Upsell popup. Fires from the $4,90 button and offers the $9,90
+          intermediate tier (declining proceeds to the $4,90 checkout). */}
       <UpsellModal
         open={upsellOpen}
         onClose={() => setUpsellOpen(false)}

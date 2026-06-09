@@ -6,20 +6,20 @@ import Reveal from '../components/Reveal';
 
 const FAQS = [
   {
-    q: 'O material é físico ou digital?',
-    a: 'Digital. Você recebe o PDF por e-mail e imprime onde quiser, quantas vezes quiser.',
+    q: '¿El material es físico o digital?',
+    a: 'Digital. Recibes el PDF por correo e imprimes donde quieras, las veces que quieras.',
   },
   {
-    q: 'Para qual faixa etária é recomendado?',
-    a: 'A partir de 4-5 anos, adaptável conforme o desenvolvimento da criança.',
+    q: '¿Para qué edad está recomendado?',
+    a: 'A partir de los 4-5 años, adaptable según el desarrollo del niño.',
   },
   {
-    q: 'Sou mãe, posso usar com meus filhos?',
-    a: 'Com certeza. O material foi pensado tanto para profissionais quanto para famílias usarem em casa.',
+    q: 'Soy mamá, ¿puedo usarlo con mis hijos?',
+    a: 'Por supuesto. El material fue pensado tanto para profesionales como para que las familias lo usen en casa.',
   },
   {
-    q: 'Como recebo o acesso?',
-    a: 'Na hora. Após a confirmação do pagamento, o material chega direto no seu e-mail.',
+    q: '¿Cómo recibo el acceso?',
+    a: 'Al instante. Después de la confirmación del pago, el material llega directo a tu correo.',
   },
 ];
 
@@ -85,7 +85,7 @@ export default function FAQ() {
     <Section id="faq" className="bg-cream">
       <Reveal>
         <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-slate-900 text-center mb-10 sm:mb-12">
-          ❓ Perguntas Frequentes
+          ❓ Preguntas Frecuentes
         </h2>
       </Reveal>
 

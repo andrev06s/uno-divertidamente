@@ -8,7 +8,6 @@ import Reveal from '../components/Reveal';
  */
 export default function PainPoint() {
   // Decorative emotion dots that orbit the product photo.
-  // Positioned with absolute coordinates around the frame for a playful feel.
   const ORBIT_DOTS = [
     { color: '#FFD93D', size: 22, top: '-4%', left: '-6%', dur: 4.2 },
     { color: '#FF6B6B', size: 16, top: '-2%', right: '-4%', dur: 3.6 },
@@ -22,16 +21,16 @@ export default function PainPoint() {
       <div className="max-w-3xl mx-auto text-center">
         <Reveal>
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-slate-900 leading-tight">
-            “Como você está se sentindo?” …{' '}
-            <span className="text-slate-500">e o silêncio que vem depois.</span>
+            “¿Cómo te estás sintiendo?” …{' '}
+            <span className="text-slate-500">y el silencio que viene después.</span>
           </h2>
         </Reveal>
 
         <Reveal delay={0.15}>
           <p className="mt-5 sm:mt-6 text-base sm:text-lg md:text-xl text-slate-600 leading-relaxed">
-            O olhar pro chão. O “sei lá”. Seja no consultório ou em casa, acessar
-            o que se passa na cabeça de uma criança parece bater numa parede
-            invisível.
+            La mirada al suelo. El “no sé”. Sea en el consultorio o en casa,
+            acceder a lo que pasa en la cabeza de un niño parece chocar con una
+            pared invisible.
           </p>
         </Reveal>
 
@@ -40,10 +39,10 @@ export default function PainPoint() {
             <div className="absolute inset-0 bg-emotion-gradient opacity-20 blur-3xl rounded-full" />
             <p className="relative text-xl sm:text-2xl md:text-4xl font-bold leading-snug">
               <span className="text-anger">
-                Criança não se abre no interrogatório.
+                El niño no se abre en el interrogatorio.
               </span>
               <br />
-              <span className="text-anxiety">Ela se abre na brincadeira.</span>
+              <span className="text-anxiety">Se abre en el juego.</span>
             </p>
           </div>
         </Reveal>
@@ -79,8 +78,8 @@ export default function PainPoint() {
                 {/* White inner card holds the image with a bit of breathing room */}
                 <div className="rounded-[1.75rem] bg-white p-3 sm:p-4 overflow-hidden">
                   <img
-                    src="https://i.postimg.cc/cC6vx1Xj/Design-sem-nome-2026-06-02T141349-683.png"
-                    alt="UNO das Emoções, kit com cartas das cinco emoções"
+                    src="https://i.postimg.cc/fL0RFK7G/Design-sem-nome-2026-06-09T153710-792.png"
+                    alt="UNO de las Emociones, kit con cartas de las cinco emociones"
                     loading="lazy"
                     decoding="async"
                     className="block w-full h-auto rounded-[1.35rem]"

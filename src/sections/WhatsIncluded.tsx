@@ -7,29 +7,29 @@ const ITEMS = [
   {
     icon: Printer,
     emoji: '🖨️',
-    title: 'Arquivo em alta resolução',
-    text: 'PDF pronto para impressão em qualquer impressora, doméstica ou profissional.',
+    title: 'Archivo en alta resolución',
+    text: 'PDF listo para imprimir en cualquier impresora, doméstica o profesional.',
     color: '#4D96FF',
   },
   {
     icon: Sparkles,
     emoji: '🃏',
-    title: 'Cartas de ação e emoção',
-    text: 'Cartas temáticas baseadas nas emoções que as crianças reconhecem na hora.',
+    title: 'Cartas de acción y emoción',
+    text: 'Cartas temáticas basadas en las emociones que los niños reconocen al instante.',
     color: '#FF6B6B',
   },
   {
     icon: BookOpen,
     emoji: '📖',
-    title: 'Instruções de uso',
-    text: 'Guia completo com regras e sugestões de aplicação clínica, escolar e familiar.',
+    title: 'Instrucciones de uso',
+    text: 'Guía completa con reglas y sugerencias de aplicación clínica, escolar y familiar.',
     color: '#6BCB77',
   },
   {
     icon: CheckCircle2,
     emoji: '✅',
-    title: 'Acesso imediato',
-    text: 'Receba no seu e-mail em segundos após a compra.',
+    title: 'Acceso inmediato',
+    text: 'Recíbelo en tu correo en segundos después de la compra.',
     color: '#9D4EDD',
   },
 ];
@@ -40,7 +40,7 @@ export default function WhatsIncluded() {
       <div className="text-center mb-10 sm:mb-14">
         <Reveal>
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-slate-900">
-            ⭐ Material prático, testado e de alta qualidade
+            ⭐ Material práctico, probado y de alta calidad
           </h2>
         </Reveal>
       </div>

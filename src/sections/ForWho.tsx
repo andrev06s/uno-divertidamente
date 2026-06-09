@@ -4,15 +4,15 @@ import Reveal from '../components/Reveal';
 
 const ITEMS = [
   {
-    text: 'É psicóloga, psicopedagoga ou educadora e quer acessar o mundo interno da criança já nas primeiras sessões.',
+    text: 'Eres psicóloga, psicopedagoga o educadora y quieres acceder al mundo interno del niño desde las primeras sesiones.',
     color: '#9D4EDD',
   },
   {
-    text: 'É mãe ou pai e quer um jeito leve de conversar com seu filho, principalmente depois das crises.',
+    text: 'Eres mamá o papá y quieres una forma ligera de conversar con tu hijo, sobre todo después de las crisis.',
     color: '#FF6B6B',
   },
   {
-    text: 'Quer transformar o desenvolvimento emocional em uma brincadeira que a criança pede pra repetir.',
+    text: 'Quieres transformar el desarrollo emocional en un juego que el niño pide repetir.',
     color: '#4D96FF',
   },
 ];
@@ -23,7 +23,7 @@ export default function ForWho() {
       <div className="max-w-3xl mx-auto">
         <Reveal>
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-slate-900 text-center mb-10 sm:mb-12">
-            Feito para você que:
+            Hecho para ti que:
           </h2>
         </Reveal>
 

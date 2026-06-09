@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
 
 const EMOTIONS = [
-  { label: 'Alegria', color: '#FFD93D' },
-  { label: 'Raiva', color: '#FF6B6B' },
+  { label: 'Alegría', color: '#FFD93D' },
+  { label: 'Rabia', color: '#FF6B6B' },
   { label: 'Tristeza', color: '#4D96FF' },
-  { label: 'Nojo', color: '#6BCB77' },
-  { label: 'Ansiedade', color: '#9D4EDD' },
+  { label: 'Asco', color: '#6BCB77' },
+  { label: 'Ansiedad', color: '#9D4EDD' },
 ];
 
 /**

@@ -36,14 +36,14 @@ export default function FinalCTA() {
       <Reveal>
         <div className="relative max-w-4xl mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight mb-8 sm:mb-10">
-            Dê às suas crianças o jeito mais leve de{' '}
-            <span className="text-gradient-emotions">falar o que sentem.</span>
+            Dale a tus niños la forma más ligera de{' '}
+            <span className="text-gradient-emotions">decir lo que sienten.</span>
           </h2>
 
-          <CtaButton>🎴 QUERO GARANTIR O MEU UNO</CtaButton>
+          <CtaButton>🎴 QUIERO ASEGURAR MI UNO</CtaButton>
 
           <p className="mt-6 text-xs sm:text-sm text-slate-500">
-            Acesso imediato · Pagamento seguro · Garantia de 7 dias
+            Acceso inmediato · Pago seguro · Garantía de 7 días
           </p>
         </div>
       </Reveal>
