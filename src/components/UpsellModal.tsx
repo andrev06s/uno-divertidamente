@@ -112,7 +112,7 @@ export default function UpsellModal({
             >
               ¡Espera! Por solo{' '}
               <span className="text-gradient-emotions">$5 más</span>, llévate el
-              Kit Completo.
+              UNO + Kit Completo.
             </h3>
 
             {/* Perks list — 5 items from the Kit Completo, compact */}
