@@ -22,12 +22,11 @@ const PLAN_KIT_EXTRAS = [
   'Técnicas de Comportamiento',
 ];
 
-// Checkout links. URL params from the landing page (utm_*, fbclid, etc.)
-// are forwarded automatically via withQuery() at click time.
-// TODO: replace with the LATAM gateway URLs once provided.
-const CHECKOUT_UNO_BASICO = 'https://pay.lowify.com.br/checkout?product_id=43z4B2';     // $4,90
-const CHECKOUT_UPSELL_R10 = 'https://pay.lowify.com.br/go.php?offer=udbg35z';           // $9,90 (popup)
-const CHECKOUT_KIT_COMPLETO = 'https://pay.lowify.com.br/checkout.php?product_id=GKei3I'; // $17,90
+// Checkout links (Hotmart). URL params from the landing page (utm_*,
+// fbclid, etc.) are forwarded automatically via withQuery() at click time.
+const CHECKOUT_UNO_BASICO = 'https://pay.hotmart.com/G106232767C?off=o0l2lq0g&checkoutMode=10';  // $5
+const CHECKOUT_UPSELL_R10 = 'https://pay.hotmart.com/H106233515L?off=1vxv4jpa&checkoutMode=10';  // $9,90 (popup)
+const CHECKOUT_KIT_COMPLETO = 'https://pay.hotmart.com/H106233515L?checkoutMode=10';             // $17,90
 
 function Stars() {
   return (
@@ -78,7 +77,7 @@ export default function Pricing() {
 
             <div className="mb-6">
               <p className="text-4xl md:text-5xl font-bold text-slate-900">
-                $4,90
+                $5
               </p>
               <p className="text-sm text-slate-500 mt-1">pago único</p>
             </div>
@@ -100,7 +99,7 @@ export default function Pricing() {
                 variant="outline"
                 size="md"
                 onClick={() => setUpsellOpen(true)}
-                ariaLabel="Quiero el UNO básico por $4,90"
+                ariaLabel="Quiero el UNO básico por $5"
               >
                 🎴 QUIERO EL UNO
               </CtaButton>
@@ -184,8 +183,8 @@ export default function Pricing() {
         </Reveal>
       </div>
 
-      {/* Upsell popup. Fires from the $4,90 button and offers the $9,90
-          intermediate tier (declining proceeds to the $4,90 checkout). */}
+      {/* Upsell popup. Fires from the $5 button and offers the $9,90
+          intermediate tier (declining proceeds to the $5 checkout). */}
       <UpsellModal
         open={upsellOpen}
         onClose={() => setUpsellOpen(false)}

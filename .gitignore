@@ -12,10 +12,11 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Editor / OS
+# Editor / OS / AI tooling
 .vscode/*
 !.vscode/extensions.json
 .idea/
+.claude/
 .DS_Store
 Thumbs.db
 

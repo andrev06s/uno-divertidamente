@@ -7,7 +7,7 @@ interface UpsellModalProps {
   onClose: () => void;
   /** Where to send the user if they accept the $9,90 upgrade. */
   upgradeHref: string;
-  /** Where to send the user if they decline and want only the basic UNO ($4,90). */
+  /** Where to send the user if they decline and want only the basic UNO ($5). */
   declineHref: string;
 }
 
@@ -25,7 +25,7 @@ const KIT_PERKS = [
 ];
 
 /**
- * Order-bump modal. Shown when the user clicks the $4,90 basic-plan CTA.
+ * Order-bump modal. Shown when the user clicks the $5 basic-plan CTA.
  * Mobile-first: total height stays under ~470px so it fits in a 568px
  * viewport (iPhone SE 1st gen) without scrolling. Layout is intentionally
  * stripped of decorative blobs and long paragraphs for a clean look.
@@ -138,7 +138,7 @@ export default function UpsellModal({
               <div className="flex items-baseline justify-between gap-3">
                 <span className="text-xs text-slate-500">UNO solo</span>
                 <span className="text-sm font-semibold text-slate-400 line-through">
-                  $4,90
+                  $5
                 </span>
               </div>
               <div className="flex items-baseline justify-between gap-3 mt-1">
@@ -164,7 +164,7 @@ export default function UpsellModal({
                 href={declineHref}
                 className="block w-full text-center bg-white border-2 border-slate-200 text-slate-600 font-semibold text-xs sm:text-sm px-4 py-2.5 sm:px-5 sm:py-3 rounded-full hover:border-slate-300 hover:bg-slate-50 transition-colors leading-tight"
               >
-                No, gracias — solo el UNO por $4,90
+                No, gracias — solo el UNO por $5
               </a>
             </div>
           </motion.div>
